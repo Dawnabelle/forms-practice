@@ -10,20 +10,35 @@
   </head>
   <body>
     <div class="container">
-      <h1>Enter your information to receive a personalized letter:</h1>
+      <h1>Enter your information below to receive a personalized letter:</h1>
 <!-- User input form -->
       <div>
         <form id="formOne">
           <div class="form-group">
-            <label for="fullName">Your first and last name</label>
-
+            <label for="firstName">Your first name:</label>
+            <input id="firstName" type="text">
           </div>
-
+          <div class="form-group">
+            <label for="lastName">Your last name:</label>
+            <input id="lastName" type="text">
+          </div>
+          <div class="form-group">
+            <label for="streetAddress">Street address:</label>
+            <input id="streetAddress" type="text">
+          </div>
+          <div class="form-group">
+            <label for="cityStateZip">City, State Zip:</label>
+            <input id="cityStateZip" type="text">
+          </div>
+          <button type="submit" class="btn">Show me my letter</button>
         </form>
       </div>
 <!-- User letter output -->
-      <div>
-
+      <div id="letter">
+        <p><span class="firstName lastName"></span><br><span  class="streetAddress"></span><br><span class="cityStateZip"></span><br><br>
+        <h1>Your personalized letter</h1>
+        <p>
+          Dear <span class="firstName"></span>, <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
 
     </div>
